@@ -1,0 +1,7 @@
+<mat-grid-list cols="3">
+  <ng-container *ngFor="let materialType of materialTypes">
+    <mat-grid-tile>
+      <app-material-type [materialType]="materialType"></app-material-type>
+    </mat-grid-tile>
+  </ng-container>
+</mat-grid-list>
