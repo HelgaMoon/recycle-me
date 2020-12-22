@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Domain.Questioning.Models
+﻿namespace Domain.Questioning.Models
 {
-	class Answer
+	public class Answer
 	{
+		string text;
+		int parentQuestionId;
+		int? questionId;
+		int? materialId;
+
+		public string GetLink() => questionId == null ? $"material\\{materialId}" : $"question\\{questionId}";
 	}
 }

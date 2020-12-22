@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Domain.Questioning.Models
 {
-	class Question
+	public class Question
 	{
+		List<Answer> answers;
+
 	}
 }
