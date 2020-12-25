@@ -5,32 +5,35 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import { MaterialTypeComponent } from './material-type/material-type.component';
-import { MaterialTypesComponent } from './material-type/material-types.component';
+import { MaterialTypeCardComponent } from './material-type/material-type-card/material-type-card.component';
+import { MaterialTypesComponent } from './material-type/material-types/material-types.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatGridListModule } from '@angular/material';
+import { MaterialTypeComponent } from './material-type/material-type/material-type.component';
+import { FooterComponent } from './footer/footer.component';
+import { AppMatControlModule } from './app.mat-controls.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavMenuComponent,
+    HeaderComponent,
     HomeComponent,
     FetchDataComponent,
+    MaterialTypeCardComponent,
     MaterialTypeComponent,
-    MaterialTypesComponent
+    MaterialTypesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
-    MatCardModule,
-    MatGridListModule,
+    AppMatControlModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'materialtype/:id', component: MaterialTypeComponent },
     ]),
     BrowserAnimationsModule
   ],

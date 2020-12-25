@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MaterialType } from '../models/material-type';
+import { MaterialType } from '../../models/material-type';
 
 @Component({
   selector: 'app-material-types',

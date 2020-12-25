@@ -1,0 +1,11 @@
+<header>
+  <mat-toolbar>
+    <a [routerLink]="['/']">Recycle Me</a>
+    <span class="spacer"></span>
+    <span
+          [routerLinkActive]="['link-active']"
+          [routerLinkActiveOptions]="{ exact: true }">
+        <a [routerLink]="['/']">Home</a>
+      </span>
+  </mat-toolbar>
+</header>
