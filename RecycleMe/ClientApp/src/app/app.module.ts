@@ -32,9 +32,9 @@ import { AppMatControlModule } from './app.mat-controls.module';
     FormsModule,
     AppMatControlModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'materialtype/:id', component: MaterialTypeComponent },
-    ]),
+    { path: '', component: HomeComponent, pathMatch: 'full' },
+    { path: 'materialtype/:id', component: MaterialTypeComponent },
+], { relativeLinkResolution: 'legacy' }),
     BrowserAnimationsModule
   ],
   providers: [],
