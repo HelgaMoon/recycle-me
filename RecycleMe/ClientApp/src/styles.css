@@ -23,8 +23,14 @@ code {
 
 .site-content {
   flex: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .spacer {
   flex: 1 1 auto;
+}
+
+a:hover {
+  text-decoration: none;
 }

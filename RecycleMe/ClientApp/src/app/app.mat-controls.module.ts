@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatCardModule, MatGridListModule, MatProgressSpinnerModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatDividerModule, MatGridListModule, MatIconModule, MatProgressSpinnerModule, MatToolbarModule } from '@angular/material';
 
 
 @NgModule({
@@ -11,6 +11,9 @@ import { MatCardModule, MatGridListModule, MatProgressSpinnerModule, MatToolbarM
     MatGridListModule,
     MatToolbarModule,
     MatProgressSpinnerModule,
+    MatDividerModule,
+    MatButtonModule,
+    MatIconModule,
     FlexLayoutModule,
   ],
   providers: [],
@@ -20,7 +23,10 @@ import { MatCardModule, MatGridListModule, MatProgressSpinnerModule, MatToolbarM
     MatGridListModule,
     MatToolbarModule,
     MatProgressSpinnerModule,
-    FlexLayoutModule
+    MatDividerModule,
+    MatButtonModule,
+    MatIconModule,
+    FlexLayoutModule,
   ]
 })
 export class AppMatControlModule { }

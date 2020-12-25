@@ -1,11 +1,7 @@
 <header class="container">
-  <mat-toolbar>
-    <a [routerLink]="['/']">Recycle Me</a>
+  <mat-toolbar color="primary">
+    <a mat-button color="accent" [routerLink]="['/']">Recycle Me</a>
     <span class="spacer"></span>
-    <span
-          [routerLinkActive]="['link-active']"
-          [routerLinkActiveOptions]="{ exact: true }">
-        <a [routerLink]="['/']">Home</a>
-      </span>
+    <a mat-button color="accent" [routerLink]="['/']">Home</a>
   </mat-toolbar>
 </header>

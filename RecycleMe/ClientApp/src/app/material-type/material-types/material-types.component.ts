@@ -7,7 +7,8 @@ import { MaterialType } from '../../models/material-type';
   styleUrls: ['./material-types.component.css']
 })
 export class MaterialTypesComponent implements OnInit {
-  materialTypes: MaterialType[] = [{ id: 1, name: "Пластик", image: "" }, { id: 2, name: "Металл", image: "" }]
+  materialTypes: MaterialType[] = [{ id: 1, name: "Пластик", image: "", description:"" },
+  { id: 2, name: "Металл", image: "", description: "" }]
   constructor() { }
 
   ngOnInit() {
