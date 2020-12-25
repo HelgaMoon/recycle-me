@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule, MatGridListModule, MatProgressSpinnerModule, MatToolbarModule } from '@angular/material';
 
 
@@ -9,7 +10,8 @@ import { MatCardModule, MatGridListModule, MatProgressSpinnerModule, MatToolbarM
     MatCardModule,
     MatGridListModule,
     MatToolbarModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [],
@@ -17,7 +19,8 @@ import { MatCardModule, MatGridListModule, MatProgressSpinnerModule, MatToolbarM
     MatCardModule,
     MatGridListModule,
     MatToolbarModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    FlexLayoutModule
   ]
 })
 export class AppMatControlModule { }

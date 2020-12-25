@@ -1,7 +1,5 @@
-<mat-grid-list cols="3">
+<div fxLayout="row" fxLayoutAlign="space-between">
   <ng-container *ngFor="let materialType of materialTypes">
-    <mat-grid-tile>
-      <app-material-type-card [materialType]="materialType"></app-material-type-card>
-    </mat-grid-tile>
+    <app-material-type-card [materialType]="materialType"></app-material-type-card>
   </ng-container>
-</mat-grid-list>
+</div>
