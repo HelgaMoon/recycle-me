@@ -1,0 +1,12 @@
+<a routerLink="/materialsubtype/{{materialSubType.id}}">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>{{materialSubType.name}}</mat-card-title>
+    </mat-card-header>
+    
+    <img mat-card-image *ngIf="materialSubType.image" src="{{materialSubType.image}}" alt="{{materialSubType.name}}">
+    <div class="icon" fxLayout="row" fxLayoutAlign="center center">
+      <mat-icon [inline]="true" fxLayoutAlign="center center" *ngIf="!materialSubType.image">no_photography</mat-icon>
+    </div>
+  </mat-card>
+</a>
